@@ -8,27 +8,26 @@ import CategoryPreview from "../../components/category-preview/category-preview.
 import Spinner from "../spinner/spinner.component";
 // import ProductCard from "../../components/product-card/product-card.component";
 
-
-const CategoriesPreview = ()=> {
+    const CategoriesPreview = () => {
+        
     // const {categoriesMap} = useContext(CategoriesContext);
-const categoriesMap = useSelector(selectCategoriesMap)
-const isLoading = useSelector(selectCategoriesIsLoading);
-
+        const categoriesMap = useSelector(selectCategoriesMap);
+        const isLoading = useSelector(selectCategoriesIsLoading);
     return (
         <Fragment>
         {
-            isLoading ? (        
+            isLoading ? (
             <Spinner/>
             ) : (
-                Object.keys(categoriesMap).map(title => {
+            Object.keys(categoriesMap).map((title) => {
             const products = categoriesMap[title];
             return (
-                <CategoryPreview key={title} title={title} products={products}/>
+                <CategoryPreview key={title} title={title} products={products} />
             );
-        })
-        )}
+            })
+            )}
         </Fragment>
-    );
-};
-
-export default CategoriesPreview;
+        );
+    };
+    
+    export default CategoriesPreview;
