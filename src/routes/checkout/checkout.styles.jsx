@@ -9,9 +9,7 @@ export const CheckoutContainer = styled.div`
   margin: 50px auto 0;
 
   @media (max-width: 600px) {
-    width: 95%;
-    display: flex;
-  flex-direction: column;
+    width: 80vw; 
   }
 `;
 

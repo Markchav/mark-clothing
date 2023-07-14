@@ -11,7 +11,8 @@ export const CheckoutItemContainer = styled.div`
 
 
   @media (max-width: 600px) {
-width: 100%;
+/* width: 100%; */
+width: 80vw; 
 /* margin-left:20px; */
   }
 `;
