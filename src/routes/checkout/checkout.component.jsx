@@ -39,6 +39,23 @@ const Checkout =() => {
                 ))}
                 <Total>Total : ${cartTotal}</Total>
                 <PaymentForm/>
+                <div className="warning-container">
+      <h3>Warning: Test Credit Card Information</h3>
+      <p>
+        Please note that the following credit card details are intended for testing purposes only. They should not be used for real transactions.
+      </p>
+      <p>
+        <strong>VISA:</strong> 4242 4242 4242 4242
+      </p>
+      <p>
+        <strong>MASTERCARD:</strong> 5555 5555 5555 4444
+      </p>
+      <p>
+        Expiration Date: Any future date
+        <br />
+        CVV: Any 3 digits
+      </p>
+    </div>
             </CheckoutContainer>
     );
 };
