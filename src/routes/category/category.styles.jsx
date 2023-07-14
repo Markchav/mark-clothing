@@ -5,6 +5,11 @@ export const CategoryContainer = styled.div`
   grid-template-columns: repeat(4, 1fr);
   column-gap: 14px;
   row-gap: 50px;
+
+  @media (max-width: 420px) {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap:10px ;
+}
 `;
 
 export const Title = styled.h2`
