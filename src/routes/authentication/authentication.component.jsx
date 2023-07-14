@@ -15,7 +15,6 @@ const Authentication= ()=> {
 
     return (
         <AuthenticationContainer>
-            {/* <button onClick={signInWithGoogleRedirect}>Sign in with Google Redirect</button> */}
             {/* <Form> */}
             <SignInForm/>
             <SignUpForm/>

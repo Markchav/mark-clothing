@@ -18,9 +18,13 @@ export const ButtonsContainer = styled.div`
 
   @media (max-width: 420px) {
     button {
-    font-size: 11.5px;
-    padding:10px;
+    font-size: 13px;
+    padding:1px;
   }}
 
-
+  /* @media (max-width: 420px) {
+  button {
+    padding: 10px;
+  }
+} */
 `;

@@ -6,12 +6,12 @@ export const CheckoutItemContainer = styled.div`
   min-height: 100px;
   border-bottom: 1px solid darkgrey;
   padding: 15px 0;
-  font-size: 20px;
+  font-size: 18px;
   align-items: center;
 
 
   @media (max-width: 600px) {
-min-width: 350px;
+width: 350px;
 /* margin-left:20px; */
   }
 `;
