@@ -21,13 +21,9 @@ import { signOutUser } from '../../utils/firebase/firebase.utils';
 
 const Navigation = ()=>{
 
-  // const {currentUser} = useContext(UserContext);
-  // console.log(currentUser);
   const currentUser = useSelector(selectCurrentUser);
   const isCartOpen = useSelector(selectIsCartOpen);
-  // const dispatch = useDispatch();
-  // const {isCartOpen} = useContext(CartContext);
-  // const signOutUser = ()=> dispatch(signOutStart());
+
 
     return (
       <Fragment>

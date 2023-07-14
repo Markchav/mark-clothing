@@ -5,7 +5,8 @@ import { selectCartTotal } from "../../store/cart/cart.selector";
 import { selectCurrentUser } from "../../store/user/user.selector";
 import {BUTTON_TYPE_CLASSES} from "../button/button.component";
 import { PaymentFormContainer, FormContainer, PaymentButton} from "./payment-form.styles";
-import { toast } from 'react-hot-toast'
+import { ToastContainer,toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const PaymentForm = ()=> {
 
@@ -35,7 +36,6 @@ const PaymentForm = ()=> {
 
         const {paymentIntent : {client_secret}} = response;
 
-        console.log(client_secret);
 
         const paymentResult = await stripe.confirmCardPayment(client_secret,{
             payment_method: {
@@ -52,13 +52,25 @@ const PaymentForm = ()=> {
             alert(paymentResult.error.message);
         } else {
             if (paymentResult.paymentIntent.status === 'succeeded') {
-    toast.success('Payment Successful!');
+                toast.success("Payment Successful");
             }
     }
         };
     return(
     <PaymentFormContainer>
     <FormContainer onSubmit={paymentHandler}>
+    <ToastContainer
+position="top-right"
+autoClose={5000}
+hideProgressBar={false}
+newestOnTop={false}
+closeOnClick
+rtl={false}
+pauseOnFocusLoss
+draggable
+pauseOnHover
+theme="light"
+/>
     <h2>Credit Card Payment :</h2>
         <CardElement/>
         <PaymentButton isLoading={isProcessingPayment} buttonType={BUTTON_TYPE_CLASSES.inverted}>Pay Now</PaymentButton>
