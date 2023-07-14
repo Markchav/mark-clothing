@@ -4,7 +4,13 @@ export const SignInContainer = styled.div`
   display: flex;
   flex-direction: column;
   width: auto;
-  padding-bottom: 100px;
+  padding-top: 18px;
+
+  @media (max-width: 420px) {
+    padding-bottom: 100px;
+padding-top: 0%;
+}
+
 
   h2 {
     margin: 10px 0;

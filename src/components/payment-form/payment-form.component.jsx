@@ -5,6 +5,7 @@ import { selectCartTotal } from "../../store/cart/cart.selector";
 import { selectCurrentUser } from "../../store/user/user.selector";
 import {BUTTON_TYPE_CLASSES} from "../button/button.component";
 import { PaymentFormContainer, FormContainer, PaymentButton} from "./payment-form.styles";
+import { toast } from 'react-hot-toast'
 
 const PaymentForm = ()=> {
 
@@ -51,7 +52,7 @@ const PaymentForm = ()=> {
             alert(paymentResult.error.message);
         } else {
             if (paymentResult.paymentIntent.status === 'succeeded') {
-    alert('Payment Successful!');
+    toast.success('Payment Successful!');
             }
     }
         };
