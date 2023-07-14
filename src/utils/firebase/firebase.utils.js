@@ -22,12 +22,12 @@ import {
 } from 'firebase/firestore';
 
 const firebaseConfig = {
-    apiKey: process.env.REACT_APP_API_KEY,
-    authDomain: process.env.REACT_APP_AUTH_DOMAIN,
-    projectId: process.env.REACT_APP_PROJECT_ID,
-    storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
-    messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID,
-    appId: process.env.REACT_APP_APP_ID
+    apiKey: "AIzaSyBgWdTENuqdwDKMVweucR4wbaT8-AYVpLA",
+    authDomain:"mark-clothing-db.firebaseapp.com",
+    projectId: "mark-clothing-db",
+    storageBucket:"mark-clothing-db.appspot.com",
+    messagingSenderId:"496108346835",
+    appId:"1:496108346835:web:7ef2e549dd0ce5cb30a326"
   };
   
  
