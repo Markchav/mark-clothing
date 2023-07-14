@@ -9,15 +9,14 @@ export const CheckoutContainer = styled.div`
   margin: 50px auto 0;
 
   @media (max-width: 600px) {
-    width: 350px;
+    width: 95%;
     display: flex;
   flex-direction: column;
-
   }
 `;
 
 export const CheckoutHeader = styled.div`
-  width: 100%;
+  width: 95%;
   padding: 10px 0;
   display: flex;
   justify-content: space-between;
@@ -27,7 +26,7 @@ export const CheckoutHeader = styled.div`
 export const HeaderBlock = styled.div`
   text-transform: capitalize;
   width: 23%;
-
+  margin-right: 20px;
   &:last-child {
     width: 8%;
 

@@ -19,10 +19,10 @@ const Checkout =() => {
         <CheckoutContainer>
         <CheckoutHeader>
             <HeaderBlock>
-                <span>Product</span>
+                <span>Image</span>
             </HeaderBlock>
             <HeaderBlock>
-            <span>Description</span>
+            <span>Product</span>
             </HeaderBlock>
             <HeaderBlock>
             <span>Quantity</span>

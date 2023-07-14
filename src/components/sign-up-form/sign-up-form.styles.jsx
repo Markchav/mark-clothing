@@ -9,7 +9,7 @@ export const SignUpContainer = styled.div`
     width: 360px;
   
   Button {
-    font-size: 11.5px;
+    font-size: 13px;
   }
   }
 
