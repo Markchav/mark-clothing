@@ -49,7 +49,7 @@ const PaymentForm = ()=> {
         setIsProcessingPayment(false);
 
         if (paymentResult.error) {
-            alert(paymentResult.error.message);
+            toast.error(paymentResult.error.message);
         } else {
             if (paymentResult.paymentIntent.status === 'succeeded') {
                 toast.success("Payment Successful");
@@ -60,7 +60,7 @@ const PaymentForm = ()=> {
     <PaymentFormContainer>
     <FormContainer onSubmit={paymentHandler}>
     <ToastContainer
-position="top-right"
+position="top-center"
 autoClose={5000}
 hideProgressBar={false}
 newestOnTop={false}
