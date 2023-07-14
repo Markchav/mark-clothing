@@ -48,6 +48,10 @@ min-width: 30%;
     border: 1px solid black;
     margin: 0 7.5px 15px;
     overflow: hidden;
+
+    @media (max-width: 420px) {
+        width:50%;
+}
   
     &:hover {
       cursor: pointer;
