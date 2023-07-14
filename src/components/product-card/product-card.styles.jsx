@@ -8,6 +8,7 @@ export const ProductCartContainer = styled.div`
   align-items: center;
   position: relative;
 
+
   img {
     width: 100%;
     height: 95%;
@@ -21,7 +22,22 @@ export const ProductCartContainer = styled.div`
     position: absolute;
     top: 255px;
     display: none;
+
   }
+
+  @media (max-width: 420px) {
+  button {
+    min-width: 20%;
+    height: 20%;
+    position: absolute;
+    top: 220px;
+    padding: 30px;
+  }
+
+  p{
+    min-width:70px;
+  }
+}
 
   &:hover {
     img {
@@ -40,7 +56,7 @@ export const Footer = styled.div`
   height: 5%;
   display: flex;
   justify-content: space-between;
-  font-size: 18px;
+  font-size: 20px;
 `;
 
 export const Name = styled.span`

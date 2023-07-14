@@ -73,7 +73,7 @@ return (
             type='button'
             onClick={signInWithGoogle}
         >
-            Sign In With Google
+            <p>Sign In With Google</p>
         </Button>
         </ButtonsContainer>
     </form>
